@@ -30,9 +30,10 @@ getAvailableServicesForDomain(domain)	Lists available services (e.g., turn_on, t
 ⚙️ Configuration
 Before use, set your Home Assistant URL and token:
 
-tools = Tools()
-tools.valves.ha_url = "http://homeassistant.local:8123"
-tools.valves.ha_api_key = "<YOUR_LONG_LIVED_ACCESS_TOKEN>"
+ - tools = Tools()
+ - tools.valves.ha_url = "http://homeassistant.local:8123"
+ - tools.valves.ha_api_key = "<YOUR_LONG_LIVED_ACCESS_TOKEN>"
+
 🔑 Note: You must create a long-lived access token in Home Assistant to use this tool.
 
 🧪 Observability
