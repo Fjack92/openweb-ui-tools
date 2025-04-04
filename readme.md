@@ -20,13 +20,14 @@ Trigger services like turn_on, turn_off, toggle, or pass custom data (e.g., brig
 Uses a long-lived access token and Home Assistant’s REST API for secure local communication.
 
 📦 Methods
-Method	Description
-getEntitiesByDomain(domain)	Lists all devices in a domain like light, fan, etc.
-getAllEntities()	Returns all devices grouped by domain, ideal for ambiguous commands.
-getAttributesForEntity(entity_id)	Retrieves the current state and all attributes of a specific entity.
-controlEntity(entity_id, domain, service)	Performs actions like turning devices on or off.
-setEntityAttribute(entity_id, domain, service, data)	Sends service calls with custom data (e.g., brightness, color, temperature).
-getAvailableServicesForDomain(domain)	Lists available services (e.g., turn_on, toggle) for a given domain.
+
+ - getEntitiesByDomain(domain)	Lists all devices in a domain like light, fan, etc.
+ - getAllEntities()	Returns all devices grouped by domain, ideal for ambiguous commands.
+ - getAttributesForEntity(entity_id)	Retrieves the current state and all attributes of a specific entity.
+ - controlEntity(entity_id, domain, service)	Performs actions like turning devices on or off.
+ - setEntityAttribute(entity_id, domain, service, data)	Sends service calls with custom data (e.g., brightness, color, temperature).
+ - getAvailableServicesForDomain(domain)	Lists available services (e.g., turn_on, toggle) for a given domain.
+ 
 ⚙️ Configuration
 Before use, set your Home Assistant URL and token:
 
